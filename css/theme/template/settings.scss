@@ -2,44 +2,44 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: #2b2b2b;
+$backgroundColor: #000;
 
 // Primary/body text
-$mainFont: 'Lato', sans-serif;
-$mainFontSize: 40px;
-$mainColor: #eee;
+$mainFont: 'Codec Pro', 'HeiTi SC', 'Microsoft YaHei', sans-serif;
+$mainFontSize: 2.4em;
+$mainColor: #fff;
 
 // Vertical spacing between blocks of text
 $blockMargin: 20px;
 
 // Headings
 $headingMargin: 0 0 $blockMargin 0;
-$headingFont: 'League Gothic', Impact, sans-serif;
-$headingColor: #eee;
+$headingFont: 'Asul', 'Weibei SC', 'Microsoft YaHei', 'Arial Black', sans-serif;
+$headingColor: #fff;
 $headingLineHeight: 1.2;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
+$headingTextTransform: normal;
 $headingTextShadow: none;
-$headingFontWeight: normal;
+$headingFontWeight: 700;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
-$heading3Size: 1.55em;
-$heading4Size: 1.00em;
+$heading1Size: 2.827em;
+$heading2Size: 1.999em;
+$heading3Size: 1.414em;
+$heading4Size: 1em;
 
-$codeFont: monospace;
+$codeFont: 'Dank Mono', monospace;
 
 // Links and actions
-$linkColor: #13DAEC;
-$linkColorHover: lighten( $linkColor, 20% );
+$linkColor: #00cc00;
+$linkColorHover: darken($linkColor, 20%);
 
 // Text selection
-$selectionBackgroundColor: #FF5E99;
-$selectionColor: #fff;
+$selectionBackgroundColor: $linkColor;
+$selectionColor: $backgroundColor;
 
 // Generates the presentation background, can be overridden
 // to return a background image or gradient
 @mixin bodyBackground() {
-	background: $backgroundColor;
+  background: $backgroundColor;
 }
